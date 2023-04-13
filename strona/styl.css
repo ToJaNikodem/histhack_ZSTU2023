@@ -107,16 +107,16 @@ h2 {
 }
 
 .container{
-    display: flex ;
+    display: flex;
 }
 
 .box{
     margin-left: 10%;
     width: 40%;
-    border: 1px solid red;
 }
+
 .box2{
     box-sizing: border-box;
     width: 40%;
-    border: 1px solid blue;
 }
+
