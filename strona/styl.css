@@ -127,8 +127,8 @@ h1 {
 .map img {
     height: 70vh;
     width: 78vh;
-    margin-top: 15vh;
     float: left;
+    margin-left: 10vw;
 }
 
 .map ol {
@@ -165,7 +165,7 @@ video {
     font-size: 45px;
     padding: 50px;
     color: white;   
-
+    text-shadow: 1px 1px 1px black;
 }
 
 .icon {
@@ -185,7 +185,7 @@ video {
 }
 
 .up_arrow_gif {
-    padding-top: 10vh;
+    margin-top: 5vh;
     transform: rotate(180deg);
     height: 100px;
     width: 100px;
@@ -211,7 +211,7 @@ video {
     opacity: 0; 
 }
 
-p.active{
+.box1_1 p.active{
     opacity: 1;
     transition: 1s;
 }
@@ -339,34 +339,37 @@ h3 {
     display: block;
     margin: 0 30px;
     font-size: 1.4vw;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 #using {        
     background-color: rgb(44, 44, 44);
 }
 
-.desc_2 {
-    width: 50vw;
-    height: 50vw;
+#using iframe{
+    width: 43vw;
     float: right;
-    
+}
+
+.desc_2 {
+    display: flex;
+    align-items: center;
+    float: right;
     line-height: 1.8;
+    width: 50vw;
 }
 .museum{
     display: flex;
-    justify-content: space-between;
-    padding:    3vh;
+    justify-content: space-around;
+    padding:3vh;
 }
 .desc_2 p {
-    width: 40vw;
     font-size: 2.5vh;
     color: white;
     border: .5px solid black;
     background-color: rgb(66, 66, 66); 
     border-radius:25px;
-    padding: 2vw;
-    overflow: hidden;
+    padding: 2vw;   
 }
 
 #model {
@@ -408,6 +411,7 @@ h3 {
     display: flex;
     justify-content: center;
     background-color: rgb(44, 44, 44);
+    text-shadow: 1px 1px 1px black;
     color: white;
 }
 
@@ -434,4 +438,23 @@ footer img {
     height: 30vh;
     width: 30vh;
     border-radius:25px;
+}
+.text a{
+    text-decoration:none;
+    color: white;
+}
+.text a:hover{
+    color:rgb(173, 173, 173)
+}
+
+#muzea li{
+    padding: 5px;
+    margin-left:5vw;
+}
+
+#muzea {
+    font-size: 3vh;
+}
+.map h2 {
+    font-size: 3vw;
 }

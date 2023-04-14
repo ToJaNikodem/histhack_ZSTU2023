@@ -25,7 +25,7 @@ exit.addEventListener("click", ()=>{
 
 
 
-const animateClass = document.querySelectorAll('p');
+const animateClass = document.querySelectorAll('.box1_1 p');
 
 function ElementInView(element) {
   const rect = element.getBoundingClientRect();
