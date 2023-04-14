@@ -9,46 +9,72 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.menu{
+.menu {
     display: none;
-    width: 20vw;
+    width: 15vw;
     background-color: rgba(44, 44, 44);
-    position: absolute; 
-    left: 100vw;  
+    position: absolute;
+    left: 100vw;
     cursor: pointer;
     animation: 1s ease;
+    height: 37.5vh;
+    box-sizing: border-box;
+}
+
+.menu li {
+    height: 7.5vh;
+    box-sizing: border-box;
+    padding-top: 2vh;
+    border-bottom: 1px solid rgb(32, 32, 32);
+    border-left: 1px solid rgb(32, 32, 32);
     text-align: center;
 }
-.menu li{
-    width: 100vw;
-    height: 7.5vh;
+
+.menu li:hover {
+    background-color: rgba(55, 55, 55);
 }
-.menu li:hover{
-    background-color: rgba(55, 55, 55);;
-}
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: white;
+    text-align: center;
 }
-.menu span{
-    float: right;
-    color:white;
-    font-size:30px;
+
+.list {
+    margin-top: 7.5vh;
 }
+
+.span {
+    float:right;
+    color: white;
+    font-size: 2vh;
+    height: 7.5vh;
+    width: 100%;
+    text-align: right;
+    background-color: rgb(32, 32, 32);
+}
+
+.span img {
+    height: 4vh;
+    padding: 1.5vh;
+}
+
 .menu_a {
-    animation: menu 2s ease;
+    animation: menu 1s ease;
     animation-fill-mode: forwards;
 }
+
 .menu ul {
     list-style: none;
 }
 
 @keyframes menu {
     0% {
-        left: 100vw;    
+        left: 100vw;
     }
-    100%{
-        left: 80vw;
+
+    100% {
+        left: 85vw;
     }
 }
 
@@ -56,12 +82,14 @@ body {
     font-family: 'Chivo Mono', monospace;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    background-color: rgb(32, 32, 32);
 }
 
 section {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 header {
@@ -82,19 +110,43 @@ h1 {
     animation: text 1s;
 }
 
-@keyframes text{
-    from{
+@keyframes text {
+    from {
         scale: 0;
     }
-    to{
+
+    to {
         scale: 1;
     }
 }
+.map {
+    text-align: center;
+    color: white;
+    padding-left: ;
+}
+.map img {
+    height: 70vh;
+    width: 78vh;
+    margin-top: 15vh;
+    float: left;
+}
 
+.map ol {
+    width: 78vh;
+    margin-top: 15vh;
+    float: left;
+    text-align: left;
+}
+
+#muzea_d {
+   width: 100vw;
+   height: 90vh;
+}
 
 iframe {
     width: 500px;
     height: 500px;
+    border-radius:25px;
 }
 
 video {
@@ -105,19 +157,21 @@ video {
     filter: brightness(50%);
     display: block;
 }
+
 .title {
     width: 100%;
     height: 80px;
     text-align: center;
     font-size: 45px;
     padding: 50px;
-    color: white;
-   
+    color: white;   
+
 }
 
 .icon {
     padding-top: 13px;
     padding-right: 15px;
+    cursor: pointer;
 }
 
 
@@ -141,8 +195,6 @@ video {
     width: 40vw;
 }
 
-
-
 .box1_1 {
     margin-left: 10%;
     width: 40%;
@@ -151,8 +203,20 @@ video {
     text-align: justify;
     padding-right: 40px;
 }
+.box1_1 p{
+    border: .5px solid black;
+    padding:20px;
+    border-radius:25px;
+    background-color: rgb(44, 44, 44);
+    opacity: 0; 
+}
 
-.googleVR{
+p.active{
+    opacity: 1;
+    transition: 1s;
+}
+
+.googleVR {
     scale: 1.4;
     margin-left: -3vw;
 }
@@ -176,6 +240,7 @@ video {
     color: white;
     font-size: 1.5vw;
     margin-top: 15vh;
+    line-height: 1.8;
 }
 
 #baner {
@@ -188,7 +253,7 @@ video {
     width: 100%;
     position: absolute;
     background-color: rgb(60, 60, 60);
-}   
+}
 
 #zastosowanie {
     flex-direction: row;
@@ -206,7 +271,7 @@ video {
     background-image: url(photos/vr_mini.png);
     background-repeat: repeat-x;
     background-size: 20vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(44, 44, 44, 0.9);
     animation: backgroundAni 20s linear infinite;
 }
 
@@ -214,6 +279,7 @@ video {
     from {
         background-position: 0 50%;
     }
+
     to {
         background-position: 100% 50%;
     }
@@ -244,12 +310,23 @@ video {
     height: 72vh;
     box-sizing: border-box;
     background-color: rgb(44, 44, 44);
+    border-radius:25px;
+    overflow: hidden;
 }
-
+h2{
+    text-align: center;
+    color: white;
+    font-size:3vw;
+    padding:3vw;
+}
 h3 {
     font-size: 2vw;
     padding: 20px;
+    color: white;
     text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 2vw;
+    /* margin-bottom:7.5vh; */
 }
 
 .uwu {
@@ -262,34 +339,37 @@ h3 {
     display: block;
     margin: 0 30px;
     font-size: 1.4vw;
+    line-height: 1.8;
 }
-#using{
+
+#using {        
     background-color: rgb(44, 44, 44);
 }
 
-#using .museum{
-    margin-left: 10vh;
-    margin-top: 5vh;
-}
-
-#using iframe{
-    position: absolute;
-    margin-top: 6vh;
-    margin-left: -3vw;
-    width: 40vw;
-    height: 50vh;
-}
-
-.desc_2{
-    width: 55vw;
-    height: 30vh;
-    color: white;
+.desc_2 {
+    width: 50vw;
+    height: 50vw;
     float: right;
-    margin-top: 5vh;
-    font-size: 2.5vh;
+    
+    line-height: 1.8;
 }
+.museum{
+    display: flex;
+    justify-content: space-between;
+    padding:    3vh;
+}
+.desc_2 p {
+    width: 40vw;
+    font-size: 2.5vh;
+    color: white;
+    border: .5px solid black;
+    background-color: rgb(66, 66, 66); 
+    border-radius:25px;
+    padding: 2vw;
+    overflow: hidden;
+}
+
 #model {
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,26 +388,29 @@ h3 {
     height: 2vh;
     animation: gradient 3s ease infinite;
 }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
 
-.title_2{
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.title_2 {
     display: flex;
     justify-content: center;
     background-color: rgb(44, 44, 44);
     color: white;
 }
+
 footer {
     background-color: rgb(44, 44, 44);
     height: 40vh;
@@ -335,18 +418,20 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left:20vw;
-    padding-right:20vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align: center;
 }
 
 footer p {
     font-weight: 600;
     font-size: 1.5vw;
     color: white;
-    
+    text-align: center;
 }
 
 footer img {
     height: 30vh;
     width: 30vh;
+    border-radius:25px;
 }

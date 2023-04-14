@@ -18,14 +18,24 @@
       <img src="photos/hamburger_icon.png" alt="icon" class="icon" width="50px" id="ham">
       <div class="menu">
          <div class="span">
-            <span>x</span>
+            <img src="photos/close.png" alt="close">
          </div>
-         <ul>
-            <li><a href="#introduction">Czym jest VR?</a></li>
-            <li><a href="#zastosowanie">Zastosowanie</a></li>
-            <li><a href="#using">Wirtualne Muzeum</a></li>
-            <li><a href="#model">Wizualizacja VR</a></li>
-         </ul>
+         <div class="list">
+            <ul>
+               <a href="#introduction">
+                  <li>Czym jest VR?</li>
+               </a>
+               <a href="#zastosowanie">
+                  <li>Zastosowanie</li>
+               </a>
+               <a href="#using">
+                  <li>Wirtualne Muzeum</li>
+               </a>
+               <a href="#model">
+                  <li>Wizualizacja VR</li>
+               </a>
+            </ul>
+         </div>
       </div>
    </header>
 
@@ -37,9 +47,6 @@
          <h1>Wejdź w ten <br> świat</h1>
          <a href="#introduction"><img src="photos/gif-bounce-arrow.gif" alt="arrow_gif" class="down_arrow_gif"></a>
       </section>
-
-     
-
       <section id="introduction">
          <div class="gap2"></div>
          <div class="title">Czym jest wirtualna rzeczywistość?</div>
@@ -49,7 +56,9 @@
             </div>
             <div class="box1_1">
                <p>
-                  Wirtualna rzeczywistość to trójwymiarowy obraz stworzony przy wykorzystaniu technologii informatycznej, który imituje świat realny lub stanowi wizję świata fikcyjnego. W systemach rzeczywistości wirtualnej komunikacja z komputerem przyjmuje formy wizualne, dźwiękowe i dotykowe.
+                  Wirtualna rzeczywistość to trójwymiarowy obraz stworzony przy wykorzystaniu technologii
+                  informatycznej, który imituje świat realny lub stanowi wizję świata fikcyjnego. W systemach
+                  rzeczywistości wirtualnej komunikacja z komputerem przyjmuje formy wizualne, dźwiękowe i dotykowe.
                </p>
             </div>
          </div>
@@ -94,25 +103,44 @@
       </section>
 
       <section id="using">
-
-         <div class="title_2">
-            <h3>Wirtualne Muzeum</h3>
-         </div>
-
-         <div class="museum">
-            <div class="sketchfab-embed-wrapper"> <iframe title="Virtual Museum" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/3a872f6982b14b5891df88bc84432361/embed"> </iframe> 
-
-         <div class="desc_2"> 
-            <p>Google VR to narzędzie, które umożliwia zwiedzanie muzeów wirtualnie za pomocą zestawu słuchawkowego VR.
-               Działanie Google VR w muzeach polega na zbieraniu informacji o wystawach i pomieszczeniach muzealnych za pomocą specjalnych kamer 360 stopni, 
-               które następnie przetwarzane są na obrazy wirtualnej rzeczywistości. Dzięki temu użytkownicy mogą przemieszczać się wirtualnie po muzeum, oglądając eksponaty i cenne dzieła sztuki w 3D.
-               Google VR umożliwia także przeczytanie informacji na temat eksponatów oraz historii muzeów za pomocą podpowiedzi i opisów, które pojawiają się na ekranie. Dodatkowo, użytkownicy mogą korzystać z interaktywnych funkcji, takich jak powiększanie poszczególnych detali obiektów czy też manipulowanie nimi w przestrzeni wirtualnej.
-               Działanie Google VR w muzeach jest szczególnie przydatne dla osób, które z różnych powodów nie mogą odwiedzić muzeum osobiście, ale chcą poznać jego wystawy i eksponaty. Dzięki temu narzędziu każdy ma możliwość zwiedzania muzeów z dowolnego miejsca na świecie, co zwiększa dostępność kultury dla szerszej publiczności.</p>
+         <h2>Wirtualne Muzeum</h2>
+         <div class="museum" sketchfab-embed-wrapper>
+            <div class=""> <iframe title="Virtual Museum" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                  webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                  execution-while-out-of-viewport execution-while-not-rendered web-share
+                  src="https://sketchfab.com/models/3a872f6982b14b5891df88bc84432361/embed"> </iframe>
+            </div>
+            <div class="desc_2">
+               <p>Google VR to narzędzie umożliwiające wirtualne zwiedzanie muzeów za pomocą zestawu VR. Specjalne
+                  kamery 360 stopni przetwarzają informacje o wystawach i pomieszczeniach muzealnych, które są dostępne
+                  dla użytkowników w postaci obrazów 3D. Użytkownicy mogą przemieszczać się po muzeum, czytać opisy
+                  eksponatów oraz korzystać z interaktywnych funkcji, takich jak powiększanie detali obiektów. Dzięki
+                  Google VR każdy ma możliwość zwiedzania muzeów z dowolnego miejsca na świecie, co zwiększa dostępność
+                  kultury dla szerszej publiczności.</p>
+            </div>
          </div>
       </section>
 
-     
-    
+      <section class="map">
+         <h3>Muzea</h3>
+         <div id="muzea_d">
+            <img src="photos/image.png" alt="mapa">
+            <ol id="muzea">
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+               <li>a</li>
+            </ol>
+         </div>
+      </section>
+
+
       <section id="model">
          <div class="title_2">
             <h3>Wizualizacja Gogli VR</h3>
@@ -127,8 +155,8 @@
    </main>
    <div class="gap2"></div>
    <footer>
-         <img src="photos/logo.png" alt="logo">
-         <p>Stronę wykonali: Nikodem Buczkowski, Miłosz Jodełka,<br> Oskar Roszak, Mateusz Żbik, Mateusz Lech</p>
+      <img src="photos/logo.png" alt="logo">
+      <p>Stronę wykonali: <br> Nikodem Buczkowski, Miłosz Jodełka,<Br> Oskar Roszak, Mateusz Żbik, Mateusz Lech</p>
    </footer>
 
 </body>
