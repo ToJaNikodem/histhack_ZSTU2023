@@ -8,3 +8,14 @@ window.addEventListener("scroll", ()=>{
         $arrow.style.display="none";
     }
 });
+
+let menu = document.querySelector(".menu");
+let icon = document.querySelector(".icon");
+let exit = document.querySelector(".menu span");
+icon.addEventListener("click", ()=>{
+    menu.classList.add('menu_a'); 
+    menu.style.display="block";
+});
+exit.addEventListener("click", ()=>{
+    menu.classList.remove('menu_a');
+});
